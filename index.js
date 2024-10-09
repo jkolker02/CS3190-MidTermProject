@@ -1,5 +1,5 @@
 /* global bootstrap: false */
-
+console.log("Script loaded");
 
 document.addEventListener("DOMContentLoaded", function() {
   (() => {
@@ -147,6 +147,4 @@ document.addEventListener("DOMContentLoaded", function() {
   else if (page === "UsedVans"){
     showUsedVans();
   }
-
-  showFeaturedCars();
 });
