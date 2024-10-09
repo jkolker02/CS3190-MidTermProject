@@ -86,9 +86,6 @@ document.addEventListener("DOMContentLoaded", function() {
         carsToShow.push(cars.trucks[i])
       }
     }
-    
-    console.log(carsToShow)
-    console.log(carsToShow[0].picture)
 
     for (var i = 0; i < carsToShow.length; i++) {
       let miles = carsToShow[i].miles;
@@ -130,63 +127,26 @@ document.addEventListener("DOMContentLoaded", function() {
   } // end of for
   }
 
-  if (window.location.pathname === "/index.html") {
+  const page = document.body.dataset.page;
+  if (page === "index"){
     showFeaturedCars();
-
-    document.getElementById("UsedSedansButton").addEventListener("click", function() {
-      window.location.href = "UsedSedans.html"; // Replace with your target URL
-    });
-    
-    document.getElementById("NewSedansButton").addEventListener("click", function() {
-      window.location.href = "NewSedans.html"; // Replace with your target URL
-    });
-    
-    document.getElementById("UsedTrucksButton").addEventListener("click", function() {
-      window.location.href = "UsedTrucks.html"; // Replace with your target URL
-    });
-    
-    document.getElementById("NewTrucksButton").addEventListener("click", function() {
-      window.location.href = "NewTrucks.html"; // Replace with your target URL
-    });
-    
-    document.getElementById("UsedVansButton").addEventListener("click", function() {
-      window.location.href = "UsedVans.html"; // Replace with your target URL
-    });
-    
-    document.getElementById("NewVansButton").addEventListener("click", function() {
-      window.location.href = "NewVans.html"; // Replace with your target URL
-    });
   }
-
-  console.log(window.location.pathname)
-  
-  if (window.location.pathname === "/UsedSedans.html") {
-    console.log("usedVans");
-    showUsedSedans();
-  }
-  
-  if (window.location.pathname === "/UsedTrucks.html") {
-    console.log("usedVans");
-    showUsedTrucks();
-
-  }
-  if (window.location.pathname === "/UsedVans.html") {
-    console.log("usedVans");
-    showUsedVans();
-  }
-  
-  if (window.location.pathname === "/NewVans.html") {
-    console.log("newVans");
-    showNewVans();
-  }
-
-  if (window.location.pathname === "/NewSedans.html") {
-    console.log("usedVans");
+  else if (page === "NewSedans"){
     showNewSedans();
   }
-  
-  if (window.location.pathname === "/NewTrucks.html") {
-    console.log("usedVans");
+  else if (page === "UsedSedans"){
+    showUsedSedans();
+  }
+  else if (page === "NewTrucks"){
     showNewTrucks();
+  }
+  else if (page === "UsedTrucks"){
+    showUsedTrucks();
+  }
+  else if (page === "NewVans"){
+    showNewVans();
+  }
+  else if (page === "UsedVans"){
+    showUsedVans();
   }
 });
