@@ -157,6 +157,8 @@ document.addEventListener("DOMContentLoaded", function() {
       window.location.href = "NewVans.html"; // Replace with your target URL
     });
   }
+
+  console.log(window.location.pathname)
   
   if (window.location.pathname === "/UsedSedans.html") {
     console.log("usedVans");
