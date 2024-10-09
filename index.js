@@ -128,6 +128,32 @@ document.addEventListener("DOMContentLoaded", function() {
   const page = document.body.dataset.page;
   if (page === "index"){
     showFeaturedCars();
+
+    document.getElementById("UsedSedansButton").addEventListener("click", function() {
+      window.location.href = "UsedSedans.html"; // Replace with your target URL
+    });
+    
+    document.getElementById("NewSedansButton").addEventListener("click", function() {
+      window.location.href = "NewSedans.html"; // Replace with your target URL
+    });
+    
+    document.getElementById("UsedTrucksButton").addEventListener("click", function() {
+      window.location.href = "UsedTrucks.html"; // Replace with your target URL
+    });
+    
+    document.getElementById("NewTrucksButton").addEventListener("click", function() {
+      window.location.href = "NewTrucks.html"; // Replace with your target URL
+    });
+    
+    document.getElementById("UsedVansButton").addEventListener("click", function() {
+      window.location.href = "UsedVans.html"; // Replace with your target URL
+    });
+    
+    document.getElementById("NewVansButton").addEventListener("click", function() {
+      window.location.href = "NewVans.html"; // Replace with your target URL
+    });
+
+    
   }
   else if (page === "NewSedans"){
     showNewSedans();
