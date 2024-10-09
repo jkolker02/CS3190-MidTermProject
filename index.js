@@ -9,8 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
       new bootstrap.Tooltip(tooltipTriggerEl)
     })
   })()
-  
-  
 
   function showFeaturedCars() {
     fetch("./data.json")
@@ -149,4 +147,6 @@ document.addEventListener("DOMContentLoaded", function() {
   else if (page === "UsedVans"){
     showUsedVans();
   }
+
+  showFeaturedCars();
 });
