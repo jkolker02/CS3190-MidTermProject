@@ -130,27 +130,27 @@ document.addEventListener("DOMContentLoaded", function() {
     showFeaturedCars();
 
     document.getElementById("UsedSedansButton").addEventListener("click", function() {
-      window.location.href = "UsedSedans.html"; // Replace with your target URL
+      window.location.href = "UsedSedans.html";
     });
     
     document.getElementById("NewSedansButton").addEventListener("click", function() {
-      window.location.href = "NewSedans.html"; // Replace with your target URL
+      window.location.href = "NewSedans.html";
     });
     
     document.getElementById("UsedTrucksButton").addEventListener("click", function() {
-      window.location.href = "UsedTrucks.html"; // Replace with your target URL
+      window.location.href = "UsedTrucks.html";
     });
     
     document.getElementById("NewTrucksButton").addEventListener("click", function() {
-      window.location.href = "NewTrucks.html"; // Replace with your target URL
+      window.location.href = "NewTrucks.html";
     });
     
     document.getElementById("UsedVansButton").addEventListener("click", function() {
-      window.location.href = "UsedVans.html"; // Replace with your target URL
+      window.location.href = "UsedVans.html"; 
     });
     
     document.getElementById("NewVansButton").addEventListener("click", function() {
-      window.location.href = "NewVans.html"; // Replace with your target URL
+      window.location.href = "NewVans.html";
     });
 
     
